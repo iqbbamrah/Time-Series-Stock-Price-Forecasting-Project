@@ -4,7 +4,7 @@
 
 Does what people say about a company on Twitter line up with where its stock is headed? This project tests that for five S&P 500 companies (**Apple, Amazon, Facebook, Intel and Microsoft**) by scoring the sentiment of tweets about each one and comparing it against a time-series forecast of its stock returns.
 
-It builds on prior work linking overall Twitter mood to market movements (e.g. Bollen, Mao & Zeng, 2010, "Twitter mood predicts the stock market") and asks the same question at the level of individual companies. Completed for ECON 423 at the University of Waterloo; the analysis is in R.
+It builds on prior work linking overall Twitter mood to market movements (e.g. Bollen, Mao & Zeng, 2010, "Twitter mood predicts the stock market") and asks the same question at the level of individual companies. Completed for ECON 423 at the University of Waterloo, with the analysis in R.
 
 ## Data
 
@@ -42,7 +42,7 @@ Intel was the only company with a significant result. The report attributes this
 
 1. Install the R packages: `dplyr`, `tidyr`, `ggplot2`, `httr`, `stringr`, `twitteR`, `magrittr`, `SentimentAnalysis`, `gridExtra`, `rtweet`, `forecast` and `DT`.
 2. Supply daily price CSVs (`AAPL.csv`, `AMZN.csv`, `FB.csv`, `INTC.csv`, `MSFT.csv`, with `Date` and `Adj.Close` columns) and update the file paths in the AAPL script, which reads all five.
-3. Run the AAPL script first, then the other four. Each script has the original mean daily sentiment scores hard-coded, so you can skip tweet collection; re-collecting would need your own Twitter/X API credentials and a recent date window.
+3. Run the AAPL script first, then the other four. Each script has the original mean daily sentiment scores hard-coded, so you can skip tweet collection. Re-collecting would need your own Twitter/X API credentials and a recent date window.
 
 ## Repo structure
 
